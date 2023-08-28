@@ -9,13 +9,13 @@ const greenButtonStyle = {
   };
 
 const Pitch = (props) => ( 
-    <Col span={8} key={props.time} style={{ marginBottom: '16px' }} xs={24} sm={8} >
+    <Col key={props.time} style={{ marginBottom: '16px' }} xs={24} sm={8} >
       {/* <Card title="Card title" bordered={false}> */}
         <Card 
             bordered={true}
             hoverable
             style={{ overflow: 'contain' }} // Adjust the height and overflow
-            cover={<img alt="example" style={{ height: '200px'}} src="https://img.grouponcdn.com/deal/2WQR2TPTRTqn8hKG8ZZ2Wqd7ZRtR/2W-1400x840/v1/c700x420.jpg" />}
+            cover={<img alt="example" src="https://img.grouponcdn.com/deal/2WQR2TPTRTqn8hKG8ZZ2Wqd7ZRtR/2W-1400x840/v1/c700x420.jpg" />}
         >
             
                 <Meta
