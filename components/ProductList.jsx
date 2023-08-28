@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 const ProductList = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>THE BEST SPORT SHOP IN TOWN</h1>
+      <h1 className={styles.title}>WE THE BEST</h1>
       <p className={styles.desc}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu
         in pretium molestie. Interdum et malesuada fames acme. Lorem ipsum dolor

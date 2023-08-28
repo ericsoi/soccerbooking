@@ -16,35 +16,35 @@ const Footer = () => {
         <div className={styles.card}>
           <h1 className={styles.title}>FIND OUR BRANCHES</h1>
           <p className={styles.text}>
-            1654 R. Hard Road
-            <br /> Dhaka , 85022
-            <br /> (4122) 867-1010
+            000 Road A
+            <br /> Rwanda , 101010
+            <br /> (254) 123-456-789
           </p>
           <p className={styles.text}>
-            2356 K. Liquid Road
-            <br /> Chattogram, 85022
-            <br /> (2334) 867-1011
+            000 Road A
+            <br /> Rwanda , 101010
+            <br /> (254) 123-456-789
           </p>
           <p className={styles.text}>
-            2356 K. Liquid Road
-            <br /> Chattogram, 85022
-            <br /> (2334) 867-1011
+            000 Road A
+            <br /> Rwanda , 101010
+            <br /> (254) 123-456-789
           </p>
           <p className={styles.text}>
-            2356 K. Liquid Road
-            <br /> Chattogram, 85022
-            <br /> (2334) 867-1011
+            000 Road A
+            <br /> Rwanda , 101010
+            <br /> (254) 123-456-789
           </p>
         </div>
         <div className={styles.card}>
           <h1 className={styles.title}>OPEN HOURS</h1>
           <p className={styles.text}>
             MONDAY UNTIL FRIDAY
-            <br /> 9:00 – 22:00
+            <br /> 6:30 – 21:31
           </p>
           <p className={styles.text}>
             SATURDAY - SUNDAY
-            <br /> 12:00 – 24:00
+            <br /> 10:00 – 24:00
           </p>
         </div>
       </div>

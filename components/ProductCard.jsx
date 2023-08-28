@@ -6,7 +6,7 @@ const ProductCard = () => {
     <div className={styles.container}>
       <Image src="/img/product.png" alt="" width="500" height="500" />
       <h1 className={styles.title}>Product</h1>
-      <span className={styles.price}>$19.90</span>
+      {/* <span className={styles.price}>$19.90</span> */}
       <p className={styles.desc}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
