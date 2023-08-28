@@ -52,7 +52,7 @@ const Featured = () => {
       >
         
       <Space direction="vertical" size="large">
-        <div size="large" style={{ textAlign: 'center', left: '50%', color:"black", backgroundColor:"lightblue", opacity: 0.7 }}><h1>Book a sports facility near you </h1></div>
+        <div size="large" style={{ textAlign: 'center', left: '50%', color:"black" }}><h1>Book a sports facility near you </h1></div>
         <Form // {...layout}
               name="basic"
               initialValues={{

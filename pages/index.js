@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Soccer Book</title>
+      <title>Soccer Booking</title>
         <meta name="description" content="we the best" />
         <link rel="icon" href="/img/icon.png" />
       </Head>

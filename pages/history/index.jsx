@@ -13,7 +13,7 @@ function History() {
       }}
     >
       <Head>
-        <title>Soccer Book</title>
+      <title>Soccer Booking</title>
         <meta name="description" content="we the best" />
         <link rel="icon" href="/img/icon.png" />
       </Head>
