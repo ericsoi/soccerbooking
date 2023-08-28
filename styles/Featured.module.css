@@ -7,7 +7,9 @@
   position: relative;
   top: 20px;
 }
-
+.custom-input::placeholder {
+  color: red; /* Change this to your desired color */
+}
 .arrowContainer {
   position: absolute;
   width: 10%;

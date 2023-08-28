@@ -1,7 +1,7 @@
 import styles from '../styles/Featured.module.css';
 import Image from 'next/image';
 import { useState } from 'react';
-import { Button, Modal, Select, Space, DatePicker, Form } from 'antd';
+import { Button, Modal, Select, Space, DatePicker, Form,Row, Col, Input } from 'antd';
 import Reservation from './Reservation';
 
 const Featured = () => {
@@ -47,71 +47,88 @@ const Featured = () => {
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          zIndex: 1
+          zIndex: 1,
+          backgroundColor:'#1e9061',
+          opacity: 0.8,
+          borderRadius:'10px',          
         }}
       >
+
+        <div className="parent-div">
+          <Row justify="center" align="middle">
+            <Col>
+              <div size="large" style={{ textAlign: 'center', color:"white" }}><h1>Book a sports facility near you </h1></div>
+            </Col>
+          </Row>
+          <Row justify="center" align="middle">
+            <Col >
+                <Space direction="vertical" size="large" >
+                  <Form // {...layout}
+                        name="basic"
+                        initialValues={{
+                          remember: true
+                        }}
+                        onFinish={onFinish}
+                        onFinishFailed={onFinishFailed}
+                        
+                      >
+                    <Space.Compact size='large'>
+                      <Form.Item
+                        name="location"
+                        rules={[
+                          {
+                            required: true,
+                            message: 'Please select location!',
+                          },
+                        ]}
+                      >
+                      <Select
+                          className="custom-input" 
+                          name="location"
+                          showSearch
+                          style={{zIndex: 99999}}
+                          size='large'
+                          placeholder="Search location"
+                          optionFilterProp="children"
+                          options={[
+                            {
+                              key:'Kamptoyoyo',
+                              value: 'Kamptoyoyo',
+                              label: 'Kamptoyoyo',
+                            },
+                            {
+                              key:'Ziwani',
+                              value: 'Ziwani',
+                              label: 'Ziwani',
+                            },
+                          ]}
+                          
+                        />
+                        </Form.Item>
+                        <Form.Item
+                            name="date"
+                            rules={[
+                              {
+                                required: true,
+                                message: 'Please Select Date!',
+                              },
+                            ]}
+                          >
+                            <DatePicker size="large" name="date" className="custom-input" />
+                          </Form.Item>
+                          <Form.Item>
+                            <Button type="primary" htmlType="submit">
+                              Submit
+                            </Button>
+                          </Form.Item>
+                      </Space.Compact>
+                  </Form>
+                </Space>
+            </Col>
+          </Row>
+        </div>
         
-      <Space direction="vertical" size="large">
-        <div size="large" style={{ textAlign: 'center', left: '50%', color:"black" }}><h1>Book a sports facility near you </h1></div>
-        <Form // {...layout}
-              name="basic"
-              initialValues={{
-                remember: true
-              }}
-              onFinish={onFinish}
-              onFinishFailed={onFinishFailed}
-            >
-          <Space.Compact size='large'>
-            <Form.Item
-              name="location"
-              rules={[
-                {
-                  required: true,
-                  message: 'Please select location!',
-                },
-              ]}
-            >
-            <Select
-                name="location"
-                showSearch
-                style={{ zIndex: 99999}}
-                size='large'
-                placeholder="Search location"
-                optionFilterProp="children"
-                options={[
-                  {
-                    key:'Kamptoyoyo',
-                    value: 'Kamptoyoyo',
-                    label: 'Kamptoyoyo',
-                  },
-                  {
-                    key:'Ziwani',
-                    value: 'Ziwani',
-                    label: 'Ziwani',
-                  },
-                ]}
-                
-              />
-              </Form.Item>
-              <Form.Item
-                  name="date"
-                  rules={[
-                    {
-                      required: true,
-                      message: 'Please Select Date!',
-                    },
-                  ]}
-                >
-                  <DatePicker size="large" name="date" />
-                </Form.Item>
-                <Form.Item>
-                  <Button type="primary" htmlType="submit">
-                    Submit
-                  </Button>
-                </Form.Item>
-            </Space.Compact>
-        </Form>
-      </Space>
+      
       <Modal
         // title="Modal 1000px width"
         centered
