@@ -9,7 +9,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Soccer Book</title>
-        <meta name="description" content="Best Soccer Shop" />
+        <meta name="description" content="we the best" />
         <link rel="icon" href="/img/icon.png" />
       </Head>
       <Featured/>
