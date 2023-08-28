@@ -74,7 +74,7 @@ const Featured = () => {
             <Select
                 name="location"
                 showSearch
-                style={{ width: 200, zIndex: 99999}}
+                style={{ zIndex: 99999}}
                 size='large'
                 placeholder="Search location"
                 optionFilterProp="children"
