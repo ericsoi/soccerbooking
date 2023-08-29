@@ -27,7 +27,7 @@ const FullscreenImage = ({ image }) => {
         bodyStyle={{ padding: 0, textAlign: 'center' }}
       >
         <div style={{ width: '100vw', height: '100vh', display: 'flex' }}>
-          <Image src={image} alt="Fullscreen" layout="fill" objectFit="contain" />
+          <Image src={image} alt="Fullscreen" layout="fill" objectFit="contain"/>
         </div>
       </Modal>
     </div>
