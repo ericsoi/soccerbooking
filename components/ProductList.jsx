@@ -1,6 +1,7 @@
 import styles from '../styles/ProductList.module.css';
 import ProductCard from './ProductCard';
 import VideoPlayer from './VideoPlayer';
+import Image from 'next/image';
 
 const ProductList = () => {
   return (
@@ -13,10 +14,11 @@ const ProductList = () => {
         sit amet, consectetur adipiscing elit.
       </p>
       <div className={styles.wrapper}>
-        <ProductCard image="/img/IMG-20230829-WA0001.jpg"/>
-        <ProductCard image="/img/IMG-20230829-WA0002.jpg"/>
-        <ProductCard image="/img/IMG-20230829-WA0003.jpg"/>
-        <ProductCard image="/img/IMG-20230829-WA0004.jpg"/>
+          <ProductCard image="/img/IMG-20230829-WA0001.jpg"/>
+          <ProductCard image="/img/IMG-20230829-WA0002.jpg"/>
+          <ProductCard image="/img/IMG-20230829-WA0003.jpg"/>
+          <ProductCard image="/img/IMG-20230829-WA0004.jpg"/>
+
       </div>
     </div>
   );
