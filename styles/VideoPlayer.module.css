@@ -1,9 +1,7 @@
 /* Center the video and make it responsive */
 .videoContainer {
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Set the height you desire */
   }
   
   .video {
