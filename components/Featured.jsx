@@ -3,14 +3,18 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { Button, Modal, Select, Space, DatePicker, Form,Row, Col, Input } from 'antd';
 import Reservation from './Reservation';
-
 const Featured = () => {
   const [index, setIndex] = useState(0);
   const [resavationProps, setresavationProps] = useState({date:null, location:null})
   const images = [
-    '/img/featured.png',
-    '/img/featured2.png',
-    '/img/featured4.png',
+    // '/img/featured.png',
+    // '/img/featured2.png',
+    // '/img/featured4.png',
+    // '/img/IMG-20230829-WA0001.jpg',
+    // '/img/IMG-20230829-WA0002.jpg',
+    // '/img/IMG-20230829-WA0003.jpg',
+    // '/img/IMG-20230829-WA0004.jpg',
+
   ];
 
   const handleArrow = (direction) => {
@@ -44,11 +48,11 @@ const Featured = () => {
         className="searchbarmobile"
         style={{
           position: 'absolute',
-          top: '50%',
+          top: '40%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
           zIndex: 1,
-          backgroundColor:'#1e9061',
+          // backgroundColor:'#1e9061',
           opacity: 0.8,
           borderRadius:'10px',          
         }}
@@ -57,7 +61,7 @@ const Featured = () => {
         <div className="parent-div">
           <Row justify="center" align="middle">
             <Col>
-              <div size="large" style={{ textAlign: 'center', color:"white" }}><h1>Book a sports facility near you </h1></div>
+              <div size="large" style={{ textAlign: 'center' }}><h1>Book a sports facility near you </h1></div>
             </Col>
           </Row>
           <Row justify="center" align="middle">
@@ -146,7 +150,7 @@ const Featured = () => {
         style={{ left: 0 }}
         onClick={() => handleArrow('l')}
       >
-        <Image src="/img/arrowl.png" alt="" layout="fill" objectFit="contain" />
+        {/* <Image src="/img/arrowl.png" alt="" layout="fill" objectFit="contain" /> */}
       </div>
       <div
         className={styles.wrapper}
@@ -164,7 +168,7 @@ const Featured = () => {
         style={{ right: 0 }}
         onClick={() => handleArrow('r')}
       >
-        <Image src="/img/arrowr.png" layout="fill" alt="" objectFit="contain" />
+        {/* <Image src="/img/arrowr.png" layout="fill" alt="" objectFit="contain" /> */}
       </div>
     </div>
   );

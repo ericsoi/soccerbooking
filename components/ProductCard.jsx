@@ -1,10 +1,12 @@
 import Image from 'next/image';
 import styles from '../styles/ProductCard.module.css';
-
-const ProductCard = () => {
+import FullscreenImage from './FullscreenImage';
+const ProductCard = (props) => {
   return (
     <div className={styles.container}>
-      <Image src="/img/product.png" alt="" width="500" height="500" />
+      {/* <Image src={props.image} alt="" width="500" height="500" /> */}
+      <FullscreenImage key={props.image} image={props.image} />
+
       <h1 className={styles.title}>Product</h1>
       {/* <span className={styles.price}>$19.90</span> */}
       <p className={styles.desc}>
