@@ -22,7 +22,7 @@ const FullscreenImage = ({ image }) => {
       <Modal
         visible={visible}
         footer={null}
-        onCancel={handleCancel}
+        onCancel={handleCancel} 
         centered
         bodyStyle={{ padding: 0, textAlign: 'center' }}
       >
