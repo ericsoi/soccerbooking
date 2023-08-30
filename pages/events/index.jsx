@@ -13,7 +13,7 @@ function Events() {
       }}
     >
       <Head>
-      <title>Soccer Booking</title>
+      <title>San Siro</title>
         <meta name="description" content="we the best" />
         <link rel="icon" href="/img/icon.png" />
       </Head>
