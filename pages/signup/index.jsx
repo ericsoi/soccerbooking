@@ -2,7 +2,7 @@ import React from 'react'
 import { Alert, Space, Spin } from 'antd';
 import Head from "next/head";
 import styles from "../../styles/Home.module.css";
-import SignIn from '../../components/Login';
+import SignUp from '../../components/SignUp';
 function Profile() {
   return (
     <div className={styles.container}
@@ -17,7 +17,7 @@ function Profile() {
         <meta name="description" content="we the best" />
         <link rel="icon" href="/img/icon.png" />
       </Head>
-      <SignIn />
+      <SignUp />
         {/* <Space direction="vertical" style={{ 
                         width: '100%', 
                         position: 'absolute',

@@ -9,13 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.7",
+    "@mui/material": "^5.14.7",
+    "@mui/styled-engine-sc": "^5.14.7",
     "@prisma/client": "^5.2.0",
     "antd": "^5.8.4",
     "fslightbox-react": "^1.7.6",
     "next": "12.1.6",
     "prisma": "^5.2.0",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "styled-components": "^6.0.7"
   },
   "devDependencies": {
     "eslint": "8.17.0",
