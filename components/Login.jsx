@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { FcGoogle } from "react-icons/fc";
 
 function Copyright(props) {
   return (
@@ -90,6 +91,16 @@ export default function SignIn() {
               sx={{ mt: 3, mb: 2 }}
             >
               Sign In
+            </Button>
+            <Button
+              type="submit"
+              fullWidth
+              variant="outlined"
+              sx={{ mt: 3, mb: 2 }}
+              color="secondary"
+              startIcon={<FcGoogle/>}
+            >
+              Continue with google
             </Button>
             <Grid container>
               <Grid item xs>
