@@ -13,7 +13,7 @@ const ProductCard = (props) => {
         
         {/* <span className={styles.price}>$19.90</span> */}
         <p className={styles.desc}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          {props.desc}
         </p>
       </div>
       <FsLightbox

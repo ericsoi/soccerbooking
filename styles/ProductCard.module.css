@@ -1,15 +1,13 @@
 .container {
-  /* width: 50%; */
-  padding: 3px;
+  width: 22%;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 19px 5px;
+  padding: 20px 5px;
   cursor: pointer;
-  
 }
-
 .roundedImageContainer {
   border-radius: 2%;
 }
@@ -17,7 +15,7 @@
 .title {
   font-size: 18px;
   font-weight: bold;
-  color: #6d6866;
+  color: #d1411e;
 }
 
 .price {
